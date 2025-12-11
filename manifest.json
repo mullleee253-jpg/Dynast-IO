@@ -1,0 +1,29 @@
+{
+    "manifest_version": 3,
+    "name": "Dynast IO Coin Tracker",
+    "version": "1.0",
+    "description": "Отслеживание монет в игре Dynast.IO",
+    "permissions": [
+        "activeTab",
+        "storage",
+        "scripting"
+    ],
+    "host_permissions": [
+        "https://dynast.io/*",
+        "https://*.dynast.io/*"
+    ],
+    "content_scripts": [
+        {
+            "matches": ["https://dynast.io/*"],
+            "js": ["content-script.js"],
+            "run_at": "document_start"
+        }
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "action": {
+        "default_popup": "popup.html",
+        "default_title": "Dynast IO Tracker"
+    }
+}

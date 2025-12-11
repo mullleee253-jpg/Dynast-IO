@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynast IO - Игровая панель</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-tab">
+        <header class="header">
+            <div class="server-info">
+                <h1>🏰 Dynast IO</h1>
+                <div class="server-name">
+                    <span class="server-label">Сервер:</span>
+                    <span id="serverName">EU-West #1</span>
+                </div>
+            </div>
+            <div class="coins-display">
+                <div class="coins">
+                    <span class="coin-icon">💰</span>
+                    <span id="coinCount">1,250</span>
+                </div>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <div class="game-frame">
+                <iframe src="https://dynast.io/" 
+                        width="100%" 
+                        height="600" 
+                        frameborder="0"
+                        title="Dynast IO Game">
+                </iframe>
+            </div>
+
+            <div class="controls-panel">
+                <h3>🎮 Управление</h3>
+                <div class="keyboard-shortcuts">
+                    <div class="shortcut-group">
+                        <h4>Движение</h4>
+                        <div class="shortcut">
+                            <kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd>
+                            <span>Движение</span>
+                        </div>
+                        <div class="shortcut">
+                            <kbd>Shift</kbd>
+                            <span>Бег</span>
+                        </div>
+                    </div>
+
+                    <div class="shortcut-group">
+                        <h4>Действия</h4>
+                        <div class="shortcut">
+                            <kbd>ЛКМ</kbd>
+                            <span>Атака</span>
+                        </div>
+                        <div class="shortcut">
+                            <kbd>ПКМ</kbd>
+                            <span>Блок</span>
+                        </div>
+                        <div class="shortcut">
+                            <kbd>E</kbd>
+                            <span>Взаимодействие</span>
+                        </div>
+                        <div class="shortcut">
+                            <kbd>F</kbd>
+                            <span>Подобрать</span>
+                        </div>
+                    </div>
+
+                    <div class="shortcut-group">
+                        <h4>Интерфейс</h4>
+                        <div class="shortcut">
+                            <kbd>Tab</kbd>
+                            <span>Таблица лидеров</span>
+                        </div>
+                        <div class="shortcut">
+                            <kbd>Enter</kbd>
+                            <span>Чат</span>
+                        </div>
+                        <div class="shortcut">
+                            <kbd>M</kbd>
+                            <span>Карта</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
